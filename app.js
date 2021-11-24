@@ -6,13 +6,13 @@ function sleep(ms) {
 
 const whiteAndBlack = () => {
   if (document.querySelector("h1").style.color == "white") {
+    document.querySelector("link[rel*='icon']").href = "white.ico";
     document.querySelector("h1").style.color = "black";
     document.body.style.backgroundColor = "white";
-    document.querySelector("link[rel*='icon']").href = "white.ico";
   } else {
+    document.querySelector("link[rel*='icon']").href = "black.ico";
     document.querySelector("h1").style.color = "white";
     document.body.style.backgroundColor = "black";
-    document.querySelector("link[rel*='icon']").href = "black.ico";
   }
 };
 
@@ -43,7 +43,7 @@ const whiteAndBlack = () => {
     "Ok then just stare at a white screen forever!";
   await sleep(2000);
   document.querySelector("h1").innerHTML = "";
-  await sleep(8000);
+  await sleep(4000);
   whiteAndBlack();
   document.querySelector("h1").innerHTML =
     "Actually can we make that black! That will make you go away *hmph*";
