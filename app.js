@@ -17,7 +17,7 @@ const whiteAndBlack = () => {
 };
 
 (async () => {
-  /*for (i = 0; i < 10; i++) {
+  for (i = 0; i < 10; i++) {
     await sleep(1000);
     whiteAndBlack();
   }
@@ -49,7 +49,7 @@ const whiteAndBlack = () => {
     "Actually can we make that black! That will make you go away *hmph*";
   await sleep(2000);
   document.querySelector("h1").innerHTML = "";
-  await sleep(15000);*/
+  await sleep(15000);
   document.querySelector("h1").style.fontSize = "1.5em";
   document.querySelector("h1").innerHTML =
     'Why are you still here? Something is seriously wrong with you if you have this much time on your hands, but CONGRATULATIONS FOR MAKING IT TO THE END! My creator wasn\'t really sure what to put here so he just decided upon a shameless plug: <a href="https://mithil-s.medium.com">Read my articles :)</a>';
