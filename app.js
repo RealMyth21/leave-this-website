@@ -41,7 +41,7 @@ const whiteAndBlack = () => {
   await sleep(2000);
   document.querySelector("h1").innerHTML =
     "Ok then just stare at a white screen forever!";
-  await sleep(4000);
+  await sleep(2000);
   document.querySelector("h1").innerHTML = "";
   await sleep(8000);
   whiteAndBlack();
